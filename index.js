@@ -1,4 +1,4 @@
-const descEvent = undefined;
+const descEvent;
 
 const init = (taiko, eventHandler, descEventHandler) => {
   descEvent = descEventHandler;
