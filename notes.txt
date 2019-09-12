@@ -1,0 +1,15 @@
+# taiko-coverage plugin notes
+2019-09-12
+
+
+npm link 
+To symlink the current directory so that I can simulate a 'npm install -g' global installation of plugin during development.
+
+
+Currently (as of 2019-09-12) you cannot load plugins from the cli to be run from the REPL 'taiko --plugin taiko-coverage'
+
+Currently, you cannot run tests 'taiko mytest.js'
+
+WORKAROUND: npm test 
+In package.json: 'test': 'taiko test/test.js'
+
