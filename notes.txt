@@ -2,6 +2,14 @@
 2019-09-12
 
 
+## Docs
+CDP : https://chromedevtools.github.io/devtools-protocol/tot/
+
+Taiko Plugin: https://github.com/getgauge/taiko/wiki/Taiko-Plugin
+
+
+
+## Workflow
 npm link 
 To symlink the current directory so that I can simulate a 'npm install -g' global installation of plugin during development.
 
