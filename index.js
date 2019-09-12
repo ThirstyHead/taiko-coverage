@@ -1,10 +1,10 @@
-const EventEmitter = require('events');
-const descEvent = new EventEmitter();
+const descEvent = undefined;
 
-const init = (taiko, eventHandler) => {
-    eventHandler.on('createdSession', async (client) => {
-        console.log('taiko-coverage init');
-    });
+const init = (taiko, eventHandler, descEventHandler) => {
+  descEvent = descEventHandler;
+  eventHandler.on('createdSession', async (client) => {
+    console.log('taiko-coverage init');
+  });
 };
 
 const runCoverage = async () => {
