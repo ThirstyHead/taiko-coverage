@@ -10,8 +10,8 @@ const init = (taiko, eventHandler, descEventHandler) => {
 
 const runCoverage = async () => {
   // console.log('taiko-coverage runCoverage');
+  console.log(await cdpClient.Browser.getVersion());
   descEvent.emit('success', 'runCoverage ran successfully');
-  console.log(cdpClient.Browser.getVersion());
 };
 
 module.exports = {
