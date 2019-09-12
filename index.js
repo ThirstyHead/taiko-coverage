@@ -9,7 +9,7 @@ const init = (taiko, eventHandler) => {
 
 const runCoverage = async () => {
   // console.log('taiko-coverage runCoverage');
-  descEvent('success', 'runCoverage ran successfully');
+  descEvent.emit('success', 'runCoverage ran successfully');
 };
 
 module.exports = {
