@@ -15,8 +15,8 @@ const runCoverage = async () => {
   //console.log(JSON.stringify(await cdpClient.DOM.getDocument(), null, 2));
   let doc = await cdpClient.DOM.getDocument();
   console.log(`doc.root.nodeId - ${doc.root.nodeId}`);
-  let rootHTML = await cdpClient.DOM.getOuterHTML(doc.root.nodeId);
-  console.log(rootHTML, null, 2);
+  let rootHTML = await cdpClient.DOM.getOuterHTML({nodeId: doc.root.nodeId});
+  console.log(rootHTML);
   descEvent.emit('success', 'runCoverage ran successfully');
 };
 
